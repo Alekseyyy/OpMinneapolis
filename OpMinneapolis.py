@@ -4,7 +4,6 @@
 # - It's spelled "Allah," not "ala." Spell it rite!
 
 # Import 'dem libraries
-
 import socket, random, threading, time, ssl, sys, time, re
 try:
  import requests, socks, bs4
@@ -14,18 +13,8 @@ except ImportError as e:
  sys.exit()
 
 # Set variables
-
-ua=[
-
-] #protip, if u hard-code da useragents into ur script, then use a tuple instead of a list cos it's faster; see dis vidya: https://youtu.be/NI26dqhs2Rk
-
-with open("browser_agents.txt", "r") as agentz:
-	indivijual_agentz = agentz.read().split("\n")
-	agentz.close()
-	for k in indivijual_agentz:
-		ua.append(k)
-	del indivijual_agentz[-1]
-
+ua=open("browser_agents.txt", "r").read().split("\n") #protip: if u hardcode ur useragents, use a tuple instead of a list cos it's faster; see dis vidya: https://youtu.be/NI26dqhs2Rk
+del ua[-1]
 lis='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_%'
 ec=['gzip','compress','deflate','br,''identity', '*']
 a=["text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","application/xml,application/xhtml+xml,text/html;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","text/html, application/xhtml+xml, image/jxr, */*","text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1"]#*/
@@ -33,10 +22,10 @@ ac=["iso-8859-1", "utf-8, iso-8859-1;q=0.5", "utf-8,iso-8859-1;q=0.5, *;q=0.1"]
 cc=[ "no-cache, no-store", "no-store","no-cache"]
 al=["af","hr","el","sq","cs","gu","pt","sw","ar","da","ht","pt-br","sv","nl","he","pa","nl-be","hi","pa-in","sv-sv","en","hu","pa-pk","ta","en-au","ar-jo","en-bz","id","rm","te","ar-kw","en-ca","iu","ro","th","ar-lb","en-ie","ga","ro-mo","tig","ar-ly","en-jm","it","ru","ts","ar-ma","en-nz","it-ch","ru-mo","tn","ar-om","en-ph","ja","sz","tr","ar-qa","en-za","kn","sg","tk","ar-sa","en-tt","ks","sa","uk","ar-sy","en-gb","kk","sc","hsb","ar-tn","en-us","km","gd","ur","ar-ae","en-zw","ky","sd","ve","ar-ye","eo","tlh","si","vi","ar","et","ko","sr","vo","hy","fo","ko-kp","sk","wa","as","fa","ko-kr","sl","cy","ast","fj","la","so","xh","az","fi","lv","sb","ji","eu","fr","lt","es","zu","bg","fr-be","lb","es-ar","be","fr-ca","mk","es-bo","bn","fr-fr","ms","es-cl","bs","fr-lu","ml","es-co","br","fr-mc","mt","es-cr","bg","fr-ch","mi","es-do","my","fy","mr","es-ec","ca","fur","mo","es-sv","ch","gd","nv","es-gt","ce","gd-ie","ng","es-hn","zh","gl","ne","es-mx","zh-hk","ka","no","es-ni","zh-cn","de","nb","es-pa","zh-sg","de-at","nn","es-py","zh-tw","de-de","oc","es-pe","cv","de-li","or","es-pr","co","de-lu","om","es-es","cr","de-ch","fa","es-uy","fa-ir","es-ve"]
 global pt
-
-#Ala iz G0d (it's "Allah" ffs, lern 2 spell goddamnit).
-
 pt=["/"]
+
+# Main Procedure
+# Ala iz G0d (it's "Allah" ffs, lern 2 spell goddamnit).
 print """ \033[1;32m
                                                     Tool By  : Al[l]a[h]
                                                        Enjoy ! :)
@@ -83,10 +72,10 @@ while True:
  except:
   print"Enter a number"
 while True:
- try:
   op=input('\nDo you want to crawl your target first?\n 1-yes\n 2-no\n>')
   if op in [1,2]:
    break
+  else:
    print"\nEnter: 1 or 2"
 if op==1:
  ur=raw_input('\nYour initial link:\n>')

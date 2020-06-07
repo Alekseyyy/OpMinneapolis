@@ -1,7 +1,7 @@
 
 # 1337 af anonymoose DDoS Skript
 
-~~Greetings we are @AnonOpUSA and @YourAnonS0u1; This is the guide to use this tool.. My gift to you :)~~ fuck dat noise, the 1337 af Russian haxx0r [Aleksey](https://twitter.com/EpsilonCalculus) is rewriting this shit mothafucka! In the event that u want 2 use the original (and I don't blame u cos it's dope af), see [their original GitHub repo](https://github.com/HLoTW/OpMinneapolis).
+~~Greetings we are @AnonOpUSA and @YourAnonS0u1; This is the guide to use this tool.. My gift to you :)~~ fuck dat noise, the 1337 af Russian haxx0r [Aleksey](https://twitter.com/EpsilonCalculus) is rewriting this shit mothafucka! I was able to reduce the LoC from 1758 down to ~~261~~ 251! In the event that u want 2 use the original (and I don't blame u cos it's dope af), see [their original GitHub repo](https://github.com/HLoTW/OpMinneapolis).
 
 ## install dem dependencies mahboi
 
